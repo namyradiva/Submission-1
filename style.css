@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@500;700&display=swap');
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    margin-inline: auto;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding-block: 0.5rem;
+    z-index: 999;
+    background-color: black;
+
+    position: fixed;
+    top: 0;
+}
+
+header nav .logo img {
+    width: 200px;
+    margin: 0;
+}
+
+header nav .navigasi ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header nav .navigasi li {
+    list-style-type: none;
+}
+   
+header nav .navigasi li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 500px;
+    transition: all .2s ease-in-out;
+}
+   
+header nav .navigasi li:hover a {
+    background-color: #CF0A0A;
+    color: white;
+}
+
+main {
+    max-width: 1100px;
+    width: 100%;
+}
+
+main #about {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 5rem;
+    margin: 3rem;
+}
+   
+main #about .about-img img {
+    padding-left: 1rem;
+    width: 300px;
+}
+
+main #about .about-desc h1 {
+    font-size: 3rem;
+    margin-block: 1rem;
+}
+   
+main #about .about-desc p {
+    line-height: 1.7rem;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+main #stream {
+    text-align: center;
+}
+
+main #stream button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+   
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #2D3E50;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main #stream button:hover {
+    border: 3px solid #2D3E50;
+    color: #2D3E50;
+    background-color: transparent;
+}
+
+main #news {
+    margin: 4rem;
+}
+
+main #news .isi {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    margin-left: 1rem;
+    margin-inline: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main #news img {
+    width: 250px
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.5rem 1rem;
+    margin: 10rem 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 3px 2px 8px 2px;
+    background-color: #E9E8E8;
+
+    text-align: center;
+    padding-left: 1.5rem;
+}
+
+main aside img {
+    width: 80px;
+    align-items: center;
+    border-radius: 1000px;
+}
+
+main aside ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+main aside li {
+    list-style-type: none;
+}
+
+main aside li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    transition: all .1s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        max-width: 500px
+    }
+
+    main #about{
+        gap: 3rem;
+        margin: 1rem;
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+
+    main #about .about-desc h1{
+        font-size: 2rem;
+    }
+
+    main #about .about-desc p {
+        line-height: 1rem;
+        font-size: 0.8rem;
+    }
+
+    main #news .isi {
+        margin-left: 0;
+        font-size: 0.8rem;
+    }
+
+    main #news img {
+        width: 120px
+    }
+}
+
+footer {
+    padding: 20px;
+    color: gainsboro;
+    background-color: black;
+    text-align: center;
+}
